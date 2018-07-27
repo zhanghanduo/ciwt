@@ -3,8 +3,8 @@ project(GOT)
 
 # Build Options
 option(SHOW_PATH "Show path of libs and headers" OFF)
-set(LOCAL_PREFIX "/home/osep/local/" CACHE PATH "Path to local installations e.g. USER/local/")
-set(OpenCV_DIR "/home/osep/local/share/OpenCV" CACHE PATH "Path to local OpenCV e.g. USER/local/share/OpenCV")
+set(LOCAL_PREFIX "/usr/lib/x86_64-linux-gnu" CACHE PATH "Path to local installations e.g. USER/local/")
+set(OpenCV_DIR "/usr/local/share/OpenCV" CACHE PATH "Path to local OpenCV e.g. USER/local/share/OpenCV")
 set(PCL_DIR "/path/to/PCLConfig.cmake" CACHE PATH "Path to local PCL e.g. USER/local/share/pcl-1.8")
 set(EIGEN_INCLUDE_DIRS "/path/to/include/eige3" CACHE PATH "Path to local eigen/include e.g. USER/local/include/eigen3")
 
@@ -20,11 +20,11 @@ set(CMAKE_CXX_FLAGS_DEBUG ${CMAKE_CXX_FLAGS_DEBUG})
 set(CMAKE_CXX_FLAGS_RELEASE ${CMAKE_CXX_FLAGS_RELEASE})
 
 set(Boost_LIBS
-        "${LOCAL_PREFIX}/lib/libboost_program_options.so"
-        "${LOCAL_PREFIX}/lib/libboost_thread.so"
-        "${LOCAL_PREFIX}/lib/libboost_system.so"
-        "${LOCAL_PREFIX}/lib/libboost_signals.so"
-        "${LOCAL_PREFIX}/lib/libboost_log.so"
+        "${LOCAL_PREFIX}/libboost_program_options.so"
+        "${LOCAL_PREFIX}/libboost_thread.so"
+        "${LOCAL_PREFIX}/libboost_system.so"
+        "${LOCAL_PREFIX}/libboost_signals.so"
+        "${LOCAL_PREFIX}/libboost_log.so"
         )
 
 # Here we set *_LIBS, *_INCLUDE_DIRS, etc

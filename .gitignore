@@ -18,3 +18,4 @@
 *.check_cache
 *.out
 cmake-build*
+build/
